@@ -25,6 +25,7 @@ function Square(heading, links, isSearch, size) {
       linkElements[i] = document.createElement("a");
       linkElements[i].tabIndex = "-1";
       linkElements[i].setAttribute("href", this.links[i].url);
+      linkElements[i].setAttribute("target", "_blank");
 
       const textnode = document.createTextNode(this.links[i].name);
       linkElements[i].appendChild(textnode);
